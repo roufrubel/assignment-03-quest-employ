@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Quest Employment</title>
+    <!-- manrope google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap"
+      rel="stylesheet"
+    />
+    <!-- font awesome icon link -->
+    <script
+      src="https://kit.fontawesome.com/1a38e55675.js"
+      crossorigin="anonymous"
+    ></script>
+    <!-- tailwind and daisyui cdn link -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@4.7.2/dist/full.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- tailwind css custom styles -->
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              "quest-primary": "#0c4a6e",
+              "quest-secondary": "#67e8f9",
+            },
+          },
+        },
+      };
+    </script>
+    <!-- custom styles -->
+    <style>
+      .font-manrope {
+        font-family: "Manrope", sans-serif;
+      }
+    </style>
+  </head>
+  <body class="text-font-manrope">
+    <!-- header section start -->
+    <header class="md:container md:mx-auto">
+      <!-- navbar section -->
+      <nav>
+        <div class="navbar bg-base-100">
+          <div class="navbar-start">
+            <div class="dropdown">
+              <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="h-5 w-5"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M4 6h16M4 12h8m-8 6h16"
+                  />
+                </svg>
+              </div>
+              <ul
+                tabindex="0"
+                class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52"
+              >
+                <li><a>Home</a></li>
+                <li><a>About</a></li>
+                <li><a>Pages</a></li>
+                <li><a>Blog</a></li>
+                <li><a>Contact</a></li>
+              </ul>
+            </div>
+            <a class="btn btn-ghost text-4xl"
+              ><span class="text-quest-primary font-extrabold">quest</span>
+              <span class="text-quest-secondary font-semibold"
+                >employment</span
+              ></a
+            >
+          </div>
+          <div class="navbar-center hidden lg:flex">
+            <ul class="menu menu-horizontal px-1">
+              <li><a class="text-quest-primary">Home</a></li>
+              <li><a>About</a></li>
+              <li><a>Pages</a></li>
+              <li><a>Blog</a></li>
+              <li><a>Contact</a></li>
+            </ul>
+          </div>
+          <div class="navbar-end">
+            <a class="btn bg-quest-primary text-white">Apply</a>
+          </div>
+        </div>
+      </nav>
+
+      <!-- <nav>
+        <div class="md:navbar-start">
+          <div class="">
+            <div class="dropdown">
+              <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="h-5 w-5"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M4 6h16M4 12h8m-8 6h16"
+                  />
+                </svg>
+              </div>
+              <ul
+                tabindex="0"
+                class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52 font-medium text-base"
+              >
+                <li><a>Home</a></li>
+                <li><a>About</a></li>
+                <li><a>Pages</a></li>
+                <li><a>Blog</a></li>
+                <li><a>Contact</a></li>
+              </ul>
+            </div>
+            <a class="btn btn-ghost text-4xl"
+              ><span class="text-quest-primary font-extrabold">quest</span>
+              <span class="text-quest-secondary font-semibold"
+                >employment</span
+              ></a
+            >
+          </div>
+          
+          <div class="md:navbar-center hidden md:flex lg:flex">
+            <ul class="menu menu-horizontal px-1 font-medium text-base">
+              <li><a>Home</a></li>
+              <li><a>About</a></li>
+              <li><a>Pages</a></li>
+              <li><a>Blog</a></li>
+              <li><a>Contact</a></li>
+            </ul>
+          </div>
+          
+          <div class="md:navbar-end">
+            <a class="btn bg-quest-primary text-white text-xl px-6 font-bold"
+              >Apply</a
+            >
+          </div>
+        </div>
+      </nav> -->
+
+      <!-- banner section --><!-- carousel or slider -->
+      <section class="banner relative my-28">
+        <div class="carousel w-full">
+          <!-- 1st slider image -->
+          <div id="slide1" class="carousel-item relative w-full">
+            <div class="">
+              <img src="images/banner-01.jpg" class="" />
+            </div>
+
+            <!-- 1st left-right arrow -->
+            <div
+              class="absolute flex justify-center md:justify-start lg:justify-start gap-4 bottom-2 left-32 md:bottom-10 lg:bottom-10 md:left-10 lg:left-10"
+            >
+              <a
+                href="#slide2"
+                class="btn btn-circle bg-quest-primary text-white text-base md:text-2xl lg:text-2xl"
+                >❮</a
+              >
+              <a
+                href="#slide2"
+                class="btn btn-circle bg-quest-primary text-white text-base md:text-2xl lg:text-2xl"
+                >❯</a
+              >
+            </div>
+          </div>
+
+          <!-- 2nd slider image -->
+          <div id="slide2" class="carousel-item relative w-full">
+            <div class="">
+              <img src="images/banner-02.jpg" class="" />
+            </div>
+
+            <!-- 2nd left-right arrow -->
+            <div
+              class="absolute flex justify-center md:justify-start lg:justify-start gap-4 bottom-2 left-32 md:bottom-10 lg:bottom-10 md:left-10 lg:left-10"
+            >
+              <a
+                href="#slide1"
+                class="btn btn-circle bg-quest-primary text-white text-base md:text-2xl lg:text-2xl"
+                >❮</a
+              >
+              <a
+                href="#slide1"
+                class="btn btn-circle bg-quest-primary text-white text-base md:text-2xl lg:text-2xl"
+                >❯</a
+              >
+            </div>
+          </div>
+        </div>
+        <!-- banner badge -->
+        <div
+          class="mt-1 mx-1 md:w-[600px] lg:w-[600px] md:h-[200px] lg:h-[200px] bg-quest-primary text-white md:absolute lg:absolute flex justify-center md:justify-end lg:justify-end md:bottom-10 lg:bottom-10 md:rught-10 lg:right-10 p-8 rounded-2xl"
+        >
+          <div>
+            <h2 class="text-2xl font-extrabold">Join The Team</h2>
+            <p class="text-base font-medium mt-4">
+              By adopting our clients culture and working practices our service
+              will be measured and accountable providing the foundations
+            </p>
+          </div>
+        </div>
+      </section>
+    </header>
+
+    <!-- main section start -->
+    <main></main>
+
+    <!-- footer section start -->
+    <footer></footer>
+  </body>
+</html>
