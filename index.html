@@ -29,6 +29,11 @@
       tailwind.config = {
         theme: {
           extend: {
+            backgroundImage: {
+              "quest-first-img": "url('/images/program-01.jpeg')",
+              "quest-second-img": "url('/images/program-02.jpeg')",
+              "quest-third-img": "url('/images/program-03.jpeg')",
+            },
             colors: {
               "quest-primary": "#0c4a6e",
               "quest-secondary": "#67e8f9",
@@ -321,6 +326,77 @@
           </div>
         </div>
       </section>
+
+      <!-- program section -->
+      <section class="my-32">
+        <!-- program titles -->
+        <div class="text-center md:w-1/2 lg:w-1/2 p-2 flex flex-col mx-auto">
+          <h2 class="text-4xl font-extrabold text-quest-primary">
+            Program Sections
+          </h2>
+          <p class="my-6 text-quest-light text-base">
+            All of our efforts are based on a commitment to growth, and we make
+            substantial investments
+          </p>
+        </div>
+
+        <!-- program image grids -->
+        <div class="grid gap-6 grid-cols-1 md:grid-cols-2 lg:grid-cols-2 text-white md:mt-14 lg:mt-14">
+          <!-- 1st card -->
+          <div class="bg-quest-first-img w-full  h-full md:h-[338px] lg:h-[338px] rounded-2xl md:relative lg:relative">
+            <div class=" md:absolute lg:absolute md:bottom-4 lg:bottom-4 md:left-4 lg:left-4 p-5">
+              <h2 class="text-2xl font-extrabold">Starter Program</h2>
+              <p class="text-base font-medium my-4">
+                Our flexible training programmes are designed to meet your
+                specific needs. You will not only be trained to be an effective
+                specialist recruiter
+              </p>
+              <button
+                class="btn bg-quest-primary  text-lg font-semibold text-white border-0"
+              >
+                Register Now!
+              </button>
+            </div>
+          </div>
+
+          <!-- 2nd card -->
+          <div class="bg-quest-second-img w-full  h-full md:h-[338px] lg:h-[338px] rounded-2xl      md:relative lg:relative">
+            <div class=" md:absolute lg:absolute md:bottom-4 lg:bottom-4 md:left-4 lg:left-4  p-5">
+              <h2 class="text-2xl font-extrabold">Med Level Program</h2>
+              <p class="text-base font-medium my-4">
+                Our flexible training programmes are designed to meet your
+                specific needs. You will not only be trained to be an effective
+                specialist recruiter
+              </p>
+              <button
+                class="btn bg-quest-primary  text-lg font-semibold text-white border-0"
+              >
+                Register Now!
+              </button>
+            </div>
+          </div>
+
+          <!-- 3rd card -->
+          <div
+            class="md:col-span-2 lg:col-span-2 bg-quest-third-img w-full h-full md:h-[338px] lg:h-[338px] rounded-2xl md:relative lg:relative"
+          >
+          <div class="md:flex-start lg:flex-start md:w-1/2 lg:w-1/2 md:absolute lg:absolute md:bottom-4 lg:bottom-4 md:left-4 lg:left-4  p-5">
+            <div>
+              <h2 class="text-2xl font-extrabold">Executive Program</h2>
+            <p class="text-base font-medium my-4">
+              Our flexible training programmes are designed to meet your
+              specific needs. You will not only be trained to be an effective
+              specialist recruiter
+            </p>
+            <button
+              class="btn bg-quest-primary  text-lg font-semibold text-white border-0"
+            >
+              Register Now!
+            </button>
+            </div>
+          </div>
+          </div>
+        </section>
     </main>
 
     <!-- footer section start -->
